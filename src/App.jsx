@@ -10,13 +10,8 @@ import {Project} from "../components/Project.jsx";
 function App() {
     const [activeTab, setActiveTab] = useState("Home");
   return (
-    <div className='h-[100vh] w-[100vw] bg-white'>
-      <nav className='flex justify-around p-3'>
-        <h3 className='text-2xl font-bold font-mono '>Abhay Lonkar</h3>
-        <div>
-          <AiOutlineGithub size={30} />
-        </div>
-      </nav>
+    <div className={`h-[100%] bg-white dark:bg-slate-950 transition-colors duration-500`}>
+
 
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 

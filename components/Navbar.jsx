@@ -30,7 +30,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
 
     return (<>
         <nav className='flex md:justify-around justify-between p-5  h-10 items-center '>
-            <h3 className='text-2xl font-bold font-mono dark:text-white'>Abhay Lonkar</h3>
+            <h3 className='text-2xl font-bold font-poppins dark:text-white'>Abhay Lonkar</h3>
             <div className={'flex items-center justify-center gap-4 '}>
                 <AiOutlineGithub size={30} className={'dark:invert'} />
                 {darkMode ? <MdLightMode size={30} className={`cursor-pointer dark:invert`} onClick={toggleDarkMode} /> :
@@ -43,7 +43,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                     return (
                         <li
                             key={index}
-                            className={`p-2 px-4  rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear ${activeTab === tab.name ? 'bg-slate-300' : ''}`}
+                            className={`p-2 px-4 font-mono rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear ${activeTab === tab.name ? 'bg-slate-300' : ''}`}
                             onClick={() => setActiveTab(tab.name)}
                         >
                             {tab.icon} {activeTab === tab.name ? "" : tab.name}

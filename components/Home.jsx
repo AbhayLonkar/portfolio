@@ -19,17 +19,17 @@ const Home = () => {
                     <div className={'flex justify-center md:justify-start'}>
                         <div className={'md:py-10 md:px-5 py-5 p-1 w-4/5 text-left'}>
                             <h4 className={'md:text-lg text-md m-1'}>
-                                <span className={'text-red-500'}>&lt;span&gt;</span> Hey, I'm Abhay <span className={'text-red-500'}>&lt;/span&gt;</span>
+                                <span className={'text-red-400'}>&lt;span&gt;</span> Hey, I'm Abhay <span className={'text-red-400'}>&lt;/span&gt;</span>
                             </h4>
                             <p className={'text-3xl  my-3'}>
-                                <span className={'text-green-600'}> &#123;Full Stack&#125;</span> Web & App Developer
+                                <span className={'text-green-400'}> &#123;Full Stack&#125;</span> Web & App Developer
                             </p>
                             <p className={'m-1 text-md '}>
-                                <span className={'text-red-500'}>&lt;p&gt;</span>
-                                With expertise in cutting-edge technologies such as <span className={'text-red-500'}>NodeJS, React, TailwindCSS</span> and <span className={'text-red-500'}>React Native</span>... I deliver web solutions that are both innovative and robust.
-                                <span className={'text-red-500'}>&lt;/p&gt;</span>
+                                <span className={'text-red-400'}>&lt;p&gt;</span>
+                                With expertise in cutting-edge technologies such as <span className={'text-red-400'}>NodeJS, React, TailwindCSS</span> and <span className={'text-red-400'}>React Native</span>... I deliver web solutions that are both innovative and robust.
+                                <span className={'text-red-400'}>&lt;/p&gt;</span>
                             </p>
-                            <button className={'mt-5 h-12 w-37 p-2 font-mono hover:bg-gray-600 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow-md transition-colors hover:cursor-pointer border border-gray-600 bg-transparent text-gray-600 dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black'}>
+                            <button className={'mt-5 h-12 w-37 p-2 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow-md transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}>
                                 <AiOutlineCloudDownload size={20} /> Download CV
                             </button>
                         </div>

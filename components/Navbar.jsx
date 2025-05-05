@@ -22,15 +22,15 @@ const Navbar = ({ activeTab, setActiveTab }) => {
     }, [darkMode]);
 
     const tabs = [
-        { name: "Home", icon: <IoMdHome size={22} className={activeTab === "Home" ? 'md:text-black text-red-600' : ''} /> },
-        { name: "About", icon: <FaUser size={18} className={activeTab === "About" ? 'md:text-black text-red-600' : ''} /> },
-        { name: "Project", icon: <SiPolymerproject size={20} className={activeTab === "Project" ? 'md:text-black text-red-600' : ''} /> },
-        { name: "Contact", icon: <TiContacts size={20} className={activeTab === "Contact" ? 'md:text-black text-red-600' : ''} /> },
+        { name: "Home", icon: <IoMdHome size={22} className={activeTab === "Home" ? 'md:text-black text-blue-400' : ''} /> },
+        { name: "About", icon: <FaUser size={18} className={activeTab === "About" ? 'md:text-black text-blue-400' : ''} /> },
+        { name: "Project", icon: <SiPolymerproject size={20} className={activeTab === "Project" ? 'md:text-black text-blue-400' : ''} /> },
+        { name: "Contact", icon: <TiContacts size={20} className={activeTab === "Contact" ? 'md:text-black text-blue-400' : ''} /> },
     ]
 
     return (<>
         <nav className='flex md:justify-around justify-between p-5  h-10 items-center '>
-            <h3 className='text-2xl font-bold font-poppins dark:text-white'>Abhay Lonkar</h3>
+            <h3 className='text-2xl font-bold font-poppins dark:text-white font-mono'>Abhay Lonkar</h3>
             <div className={'flex items-center justify-center gap-4 '}>
                 <AiOutlineGithub size={30} className={'dark:invert'} />
                 {darkMode ? <MdLightMode size={30} className={`cursor-pointer dark:invert`} onClick={toggleDarkMode} /> :
@@ -43,7 +43,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                     return (
                         <li
                             key={index}
-                            className={`p-2 px-4 font-mono rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear ${activeTab === tab.name ? 'bg-slate-300' : ''}`}
+                            className={`p-2 px-4 font-mono  rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear ${activeTab === tab.name ? 'bg-blue-400' : ''}`}
                             onClick={() => setActiveTab(tab.name)}
                         >
                             {tab.icon} {activeTab === tab.name ? "" : tab.name}

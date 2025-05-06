@@ -2,7 +2,7 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <div className='my-10 flex flex-col gap-3 justify-center items-center'>
+    <div className='my-10 flex flex-col gap-3 justify-center items-center border-2 md:w-max w-[90%] self-center md:p-5 py-2 rounded-xl  dark:border-blue-400'>
       <h1 className={'text-center text-4xl text-black mb-2 font-bold dark:text-white'}>Education</h1>
       <h3 className={'text-center text-lg text-gray-500 dark:text-gray-200'}>My Personal Journey</h3>
 

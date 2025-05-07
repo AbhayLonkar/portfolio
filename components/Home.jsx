@@ -1,6 +1,8 @@
 import React from 'react'
 import { AiOutlineCloudDownload } from "react-icons/ai";
+import { FaNodeJs, FaReact } from 'react-icons/fa';
 import { GrLinkedin, GrTwitter } from "react-icons/gr";
+import { SiTailwindcss } from 'react-icons/si';
 
 const Home = () => {
     return (
@@ -29,6 +31,13 @@ const Home = () => {
                                 With expertise in cutting-edge technologies such as <span className={'text-red-400'}>NodeJS, React, TailwindCSS</span> and <span className={'text-red-400'}>React Native</span>... I deliver web solutions that are both innovative and robust.
                                 <span className={'text-red-400'}>&lt;/p&gt;</span>
                             </p>
+                            <div className='flex gap-2 items-end text-black dark:text-gray-400'>
+                                <FaReact size={30} className='text-blue-400' />
+                                <SiTailwindcss size={30} className='text-blue-600' />
+                                <FaNodeJs size={30} className='text-green-700' />
+                                <p>... and more</p>
+                            </div>
+
                             <button className={'mt-5 h-12 w-37 p-2 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow-md transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}>
                                 <AiOutlineCloudDownload size={20} /> Download CV
                             </button>

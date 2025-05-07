@@ -8,17 +8,31 @@ const projects = [
         image: "/projects/aienhance.png",
         live: "https://aienhance.vercel.app/",
         github: "https://github.com/AbhayLonkar/AiEnhance"
-    }
+    },
+    {
+        title: "Chess Web App",
+        subtitle: "Developed an interactive chess game using JavaScript and the chess.js library. Utilized external libraries to enhance the gaming experience.",
+        image: "/projects/chess-game.png",
+        live: "",
+        github: "",
+    },
+    {
+        title: "News Android App",
+        subtitle: "Created a real-time news app showcasing Nagpur's latest updates. Eliminiated reptitive content by sorting news based on dates.",
+        image: "/projects/chess-game.png",
+        live: "",
+        github: "",
+    },
 ]
 
 export const Project = () => {
     return (
         <section id='project' className={'mt-10 md:h-full  font-mono flex flex-col items-centers justify-center  dark:text-white text-gray-600 pb-16'}>
             <h1 className={'text-center text-4xl text-black mb-10 font-bold dark:text-white'}>My Projects</h1>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-2  self-center'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-2 self-center w-auto p-2 md:mx-5 '>
 
                 {projects.map(item => (
-                    <ProjectItem title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} />
+                    <ProjectItem key={item} title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} />
                 ))}
 
             </div>

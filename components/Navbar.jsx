@@ -29,7 +29,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
     ]
 
     return (<>
-        <nav className='flex md:justify-around justify-between p-5  h-10 items-center '>
+        <nav className='flex md:justify-around justify-between p-5 mt-2  h-10 items-center '>
             <h3 className='text-2xl font-bold font-poppins dark:text-white font-mono'>Abhay Lonkar</h3>
             <div className={'flex items-center justify-center gap-4 '}>
                 <AiOutlineGithub size={30} className={'dark:invert'} />
@@ -38,12 +38,12 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             </div>
         </nav>
         <nav className='md:flex justify-center items-center text-sm dark:text-white hidden'>
-            <ul className='flex gap-2 rounded-3xl shadow-md p-2 px-3 items-center min-w-104 dark:border-b-1 border-green-600'>
+            <ul className='flex gap-2 rounded-3xl shadow-md p-2 px-3 items-center min-w-104 dark:border-b-1 border-blue-400'>
                 {tabs.map((tab, index) => {
                     return (
                         <li
                             key={index}
-                            className={`p-2 px-4 font-mono  rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear ${activeTab === tab.name ? 'bg-blue-400' : ''}`}
+                            className={`p-2 px-4 font-mono  rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear  ${activeTab === tab.name ? 'bg-blue-400' : ''}`}
                             onClick={() => setActiveTab(tab.name)}
                         >
                             {tab.icon} {activeTab === tab.name ? "" : tab.name}
@@ -53,7 +53,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             </ul>
         </nav>
 
-        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-white dark:bg-gray-900 dark:border-t-green-600 md:hidden'}>
+        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-white dark:bg-gray-900 dark:border-t-blue-400 md:hidden'}>
             <ul className={'grid grid-cols-4 w-full'}>
                 {tabs.map((tab, index) => {
                     return (
@@ -62,7 +62,8 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                             className={`p-2 px-4 flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors dark:text-white text-xs `}
                             onClick={() => setActiveTab(tab.name)}
                         >
-                            {tab.icon} {tab.name}
+                            {tab.icon}
+                            <span className={`${activeTab === tab.name ? 'text-blue-400' : 'text-black dark:text-white'}`}>{tab.name}</span>
                         </li>
                     )
                 })}

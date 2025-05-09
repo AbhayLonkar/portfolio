@@ -13,15 +13,15 @@ const projects = [
         title: "Chess Web App",
         subtitle: "Developed an interactive chess game using JavaScript and the chess.js library. Utilized external libraries to enhance the gaming experience.",
         image: "/projects/chess-game.png",
-        live: "",
-        github: "",
+        live: "https://abhaylonkar.github.io/chess/",
+        github: "https://github.com/AbhayLonkar/chess.git",
     },
     {
         title: "News Android App",
         subtitle: "Created a real-time news app showcasing Nagpur's latest updates. Eliminiated reptitive content by sorting news based on dates.",
-        image: "/projects/chess-game.png",
-        live: "",
-        github: "",
+        image: "/projects/news-app.png",
+        live: "https://github.com/AbhayLonkar/news-app",
+        github: "https://github.com/AbhayLonkar/news-app",
     },
 ]
 

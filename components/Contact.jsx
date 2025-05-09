@@ -12,11 +12,10 @@ const Contact = () => {
                 Get in <span className='text-blue-400'>Touch</span>
             </h1>
             <h3 className={'text-center text-lg text-gray-500 dark:text-gray-200 '}>Have feedback or need some help?</h3>
-            <div className='grid md:grid-cols-4 grid-cols-2 md:mt-10 mt-20 self-center justify-center gap-2'>
-                <ContactCard icon={<SiGmail size={40} className='text-red-600 ' />} link={"https://www.linkedin.com/in/abhaylonkar"} color={'red'} />
+            <div className='grid md:grid-cols-3 grid-cols-2 md:mt-10 mt-20 self-center justify-center gap-2'>
+                <ContactCard icon={<SiGmail size={40} className='text-red-600 ' />} link={"mailto:abhaylonkar9@gmail.com"} color={'red'} />
                 <ContactCard icon={<FaLinkedin size={40} className='text-blue-600' />} link={"https://www.linkedin.com/in/abhaylonkar"} color={'blue'} />
-                <ContactCard icon={<FaGithub size={40} className='text-black dark:text-white' />} link={"https://www.linkedin.com/in/abhaylonkar"} color={'red'} />
-                <ContactCard icon={<FaTelegram size={40} className='text-blue-500 ' />} link={"https://www.linkedin.com/in/abhaylonkar"} color={'blue'} />
+                <ContactCard icon={<FaGithub size={40} className='text-black dark:text-white' />} link={"https://github.com/AbhayLonkar"} color={'red'} />
             </div>
 
             <FeedbackForm />

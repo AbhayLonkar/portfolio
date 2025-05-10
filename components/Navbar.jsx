@@ -7,18 +7,19 @@ import { AiOutlineGithub } from "react-icons/ai";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 const Navbar = ({ activeTab, setActiveTab }) => {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => localStorage.getItem('is-dark') === 'true');
 
     const toggleDarkMode = () => {
         setDarkMode(prev => !prev);
-        document.documentElement.classList.toggle('dark');
     }
+
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add('dark');
         } else {
             document.documentElement.classList.remove('dark');
         }
+        localStorage.setItem('is-dark', darkMode.toString());
     }, [darkMode]);
 
     const tabs = [

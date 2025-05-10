@@ -1,8 +1,13 @@
 import React from 'react'
 import { AiOutlineCloudDownload } from "react-icons/ai";
-import { FaNodeJs, FaReact } from 'react-icons/fa';
+import { CgMail } from 'react-icons/cg';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaLinkedinIn, FaNodeJs, FaReact } from 'react-icons/fa';
 import { GrLinkedin, GrTwitter } from "react-icons/gr";
-import { SiTailwindcss } from 'react-icons/si';
+import { SiGmail, SiTailwindcss } from 'react-icons/si';
+import { TbBrandGithubFilled } from 'react-icons/tb';
+import { TiSocialGithubCircular, TiSocialLinkedin, TiSocialLinkedinCircular } from 'react-icons/ti';
+import { VscGithub } from 'react-icons/vsc';
 
 const Home = () => {
     return (
@@ -11,9 +16,12 @@ const Home = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2  justify-center h-max">
 
                     <div className={'md:p-10 md:px-5 flex gap-2 md:flex-row flex-row-reverse justify-center md:justify-end items-start'}>
-                        <div className={'p-1 flex flex-col justify-center  gap-2 h-full'}>
-                            <GrLinkedin size={30} className={'text-blue-600'} />
-                            <GrTwitter size={30} className={'text-blue-600'} />
+                        <div className={'p-1 flex flex-col justify-center items-center  gap-2 h-full '}>
+                            <a href="https://linkedin.com/in/abhaylonkar" target='_blank'><CiLinkedin size={30} className={'text-blue-600'} /></a>
+                            <a href="https://github.com/abhaylonkar" target='_blank'><VscGithub size={24} className={'text-black dark:invert transition-colors duration-500'} /></a>
+                            <a href="mailto:abhaylonkar9@gmail.com" target='_blank'><CgMail size={30} className={'text-red-500'} /></a>
+
+
                         </div>
                         <img src={'/images/Profile.png'} alt={'Profile'} className={'w-65'} />
                     </div>
@@ -38,7 +46,12 @@ const Home = () => {
                                 <p>... and more</p>
                             </div>
 
-                            <button className={'mt-5 h-12 w-37 p-3 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow shadow-blue-400  transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}>
+                            <button
+                                className={'mt-5 h-12 w-37 p-3 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow shadow-blue-400  transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}
+                                onClick={() => {
+                                    window.open('https://drive.google.com/file/d/1_jTmO6SEJcZ6jK3DWNjThz7jJneplSmt/view?usp=sharing', '_blank')
+                                }}
+                            >
                                 <AiOutlineCloudDownload size={20} /> Download CV
                             </button>
                         </div>

@@ -1,5 +1,4 @@
-import React from 'react'
-import { FaLinkedin } from 'react-icons/fa6'
+
 import { IoMdInformationCircleOutline } from 'react-icons/io'
 
 const ContactCard = ({ icon, link, color }) => {

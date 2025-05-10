@@ -1,6 +1,5 @@
-import React from 'react'
 import ContactCard from './ContactCard'
-import { FaLinkedin, FaTelegram } from 'react-icons/fa6'
+import { FaLinkedin } from 'react-icons/fa6'
 import { FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import FeedbackForm from './FeedbackForm'

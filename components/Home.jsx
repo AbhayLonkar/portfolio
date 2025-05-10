@@ -1,12 +1,8 @@
-import React from 'react'
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { CgMail } from 'react-icons/cg';
 import { CiLinkedin } from 'react-icons/ci';
-import { FaLinkedinIn, FaNodeJs, FaReact } from 'react-icons/fa';
-import { GrLinkedin, GrTwitter } from "react-icons/gr";
-import { SiGmail, SiTailwindcss } from 'react-icons/si';
-import { TbBrandGithubFilled } from 'react-icons/tb';
-import { TiSocialGithubCircular, TiSocialLinkedin, TiSocialLinkedinCircular } from 'react-icons/ti';
+import { FaNodeJs, FaReact } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 import { VscGithub } from 'react-icons/vsc';
 
 const Home = () => {

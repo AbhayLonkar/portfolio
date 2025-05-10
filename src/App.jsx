@@ -1,24 +1,23 @@
-import { AiOutlineGithub } from 'react-icons/ai'
 import './App.css'
 import Navbar from "../components/Navbar.jsx";
-import {useState} from "react";
+import { useState } from "react";
 import Home from "../components/Home.jsx";
 import About from "../components/About.jsx";
 import Contact from "../components/Contact.jsx";
-import {Project} from "../components/Project.jsx";
+import { Project } from "../components/Project.jsx";
 
 function App() {
-    const [activeTab, setActiveTab] = useState("Home");
+  const [activeTab, setActiveTab] = useState("Home");
   return (
-    <div className={`h-[100%] bg-white dark:bg-slate-950 transition-colors duration-500`}>
+    <div className={`relative h-[100%] bg-white dark:bg-slate-950 transition-colors duration-500`}>
 
 
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-        {activeTab === "Home" && <Home />}
-        {activeTab === "About" && <About />}
-        {activeTab === "Project" && <Project />}
-        {activeTab === "Contact" && <Contact />}
+      {activeTab === "Home" && <Home />}
+      {activeTab === "About" && <About />}
+      {activeTab === "Project" && <Project />}
+      {activeTab === "Contact" && <Contact />}
 
     </div>
   )

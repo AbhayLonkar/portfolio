@@ -2,7 +2,7 @@ import React from 'react'
 
 const Input = ({ type, name, placeholder }) => {
   return (
-    <input type={type} name={name} placeholder={placeholder} required
+    <input type={type} name={name} placeholder={placeholder}
       className='rounded-full p-4 bg-slate-800 text-white placeholder:text-white w-80 outline-0' />
   )
 }

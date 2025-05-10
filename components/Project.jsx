@@ -31,8 +31,8 @@ export const Project = () => {
             <h1 className={'text-center text-4xl text-black mb-10 font-bold dark:text-white'}>My Projects</h1>
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2 self-center w-auto p-2 md:mx-5 '>
 
-                {projects.map(item => (
-                    <ProjectItem key={item} title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} />
+                {projects.map((item, index) => (
+                    <ProjectItem key={index} title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} />
                 ))}
 
             </div>

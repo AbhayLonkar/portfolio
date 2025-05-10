@@ -17,7 +17,6 @@ const Contact = () => {
                 <ContactCard icon={<FaLinkedin size={40} className='text-blue-600' />} link={"https://www.linkedin.com/in/abhaylonkar"} color={'blue'} />
                 <ContactCard icon={<FaGithub size={40} className='text-black dark:text-white' />} link={"https://github.com/AbhayLonkar"} color={'red'} />
             </div>
-
             <FeedbackForm />
         </section>
     )

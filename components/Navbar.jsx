@@ -28,6 +28,11 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         { name: "Contact", icon: <TiContacts size={20} className={activeTab === "Contact" ? 'md:text-black text-blue-400' : ''} /> },
     ]
 
+    const handleChangeTab = (tab) => {
+        window.scrollTo(0, 0);
+        setActiveTab(tab);
+    }
+
     return (<>
         <nav className='flex md:justify-around justify-between p-5 mt-2  h-10 items-center '>
             <h3 className='text-2xl font-bold font-poppins dark:text-white font-mono'>Abhay Lonkar</h3>
@@ -44,7 +49,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                         <li
                             key={index}
                             className={`p-2 px-4 font-mono  rounded-3xl flex gap-2 cursor-pointer transition-colors ease-linear  ${activeTab === tab.name ? 'bg-blue-400' : ''}`}
-                            onClick={() => setActiveTab(tab.name)}
+                            onClick={() => handleChangeTab(tab.name)}
                         >
                             {tab.icon} {activeTab === tab.name ? "" : tab.name}
                         </li>
@@ -60,7 +65,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                         <li
                             key={index}
                             className={`p-2 px-4 flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors dark:text-white text-xs `}
-                            onClick={() => setActiveTab(tab.name)}
+                            onClick={() => handleChangeTab(tab.name)}
                         >
                             {tab.icon}
                             <span className={`${activeTab === tab.name ? 'text-blue-400' : 'text-black dark:text-white'}`}>{tab.name}</span>

@@ -38,7 +38,7 @@ const Home = () => {
                                 <p>... and more</p>
                             </div>
 
-                            <button className={'mt-5 h-12 w-37 p-2 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow-md transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}>
+                            <button className={'mt-5 h-12 w-37 p-3 font-mono hover:bg-blue-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow shadow-blue-400  transition-colors hover:cursor-pointer border border-blue-400 bg-transparent text-blue-400 dark:border-blue-400 dark:text-blue-400 dark:hover:bg-blue-400 dark:hover:text-black'}>
                                 <AiOutlineCloudDownload size={20} /> Download CV
                             </button>
                         </div>

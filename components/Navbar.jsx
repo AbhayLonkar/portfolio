@@ -23,10 +23,10 @@ const Navbar = ({ activeTab, setActiveTab }) => {
     }, [darkMode]);
 
     const tabs = [
-        { name: "Home", icon: <IoMdHome size={22} className={activeTab === "Home" ? 'md:text-black text-blue-400' : ''} /> },
-        { name: "About", icon: <FaUser size={18} className={activeTab === "About" ? 'md:text-black text-blue-400' : ''} /> },
-        { name: "Project", icon: <SiPolymerproject size={20} className={activeTab === "Project" ? 'md:text-black text-blue-400' : ''} /> },
-        { name: "Contact", icon: <TiContacts size={20} className={activeTab === "Contact" ? 'md:text-black text-blue-400' : ''} /> },
+        { name: "Home", icon: <IoMdHome size={22} className={activeTab === "Home" ? 'md:text-black text-white dark:text-black' : ''} /> },
+        { name: "About", icon: <FaUser size={18} className={activeTab === "About" ? 'md:text-black text-white dark:text-black' : ''} /> },
+        { name: "Project", icon: <SiPolymerproject size={20} className={activeTab === "Project" ? 'md:text-black text-white dark:text-black' : ''} /> },
+        { name: "Contact", icon: <TiContacts size={20} className={activeTab === "Contact" ? 'md:text-black text-white dark:text-black' : ''} /> },
     ]
 
     const handleChangeTab = (tab) => {
@@ -59,7 +59,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             </ul>
         </nav>
 
-        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-white dark:bg-gray-900 dark:border-t-blue-400 md:hidden'}>
+        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-white/20 backdrop-blur-2xl dark:border-t-blue-400 md:hidden'}>
             <ul className={'grid grid-cols-4 w-full'}>
                 {tabs.map((tab, index) => {
                     return (
@@ -69,7 +69,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
                             onClick={() => handleChangeTab(tab.name)}
                         >
                             {tab.icon}
-                            <span className={`${activeTab === tab.name ? 'text-blue-400' : 'text-black dark:text-white'}`}>{tab.name}</span>
+                            <span className={`${activeTab === tab.name ? 'text-white dark:text-black' : 'text-black dark:text-white'}`}>{tab.name}</span>
                         </li>
                     )
                 })}

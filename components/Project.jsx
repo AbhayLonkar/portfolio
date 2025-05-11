@@ -6,7 +6,8 @@ const projects = [
         subtitle: "An Ai powered image enhancer! Upload your image and watch it transform into a higher-resolution version in one click.",
         image: "/projects/aienhance.png",
         live: "https://aienhance.vercel.app/",
-        github: "https://github.com/AbhayLonkar/AiEnhance"
+        github: "https://github.com/AbhayLonkar/AiEnhance",
+        tech: "React, Tailwind CSS, Picsart API, Vercel",
     },
     {
         title: "Chess Web App",
@@ -14,6 +15,8 @@ const projects = [
         image: "/projects/chess-game.png",
         live: "https://abhaylonkar.github.io/chess/",
         github: "https://github.com/AbhayLonkar/chess.git",
+        tech: "HTML, CSS, JS, Chess.js, Chessboard.js",
+
     },
     {
         title: "News Android App",
@@ -21,6 +24,7 @@ const projects = [
         image: "/projects/news-app.png",
         live: "https://github.com/AbhayLonkar/news-app",
         github: "https://github.com/AbhayLonkar/news-app",
+        tech: "Android Studio, Java, Restfull APIs, SQLite",
     },
 ]
 
@@ -31,7 +35,7 @@ export const Project = () => {
             <div className='grid md:grid-cols-2 grid-cols-1 gap-2 self-center w-auto p-2 md:mx-5 '>
 
                 {projects.map((item, index) => (
-                    <ProjectItem key={index} title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} />
+                    <ProjectItem key={index} title={item.title} subtitle={item.subtitle} image={item.image} github={item.github} live={item.live} tech={item.tech} />
                 ))}
 
             </div>

@@ -9,7 +9,7 @@ import { Project } from "../components/Project.jsx";
 function App() {
   const [activeTab, setActiveTab] = useState("Home");
   return (
-    <div className={`relative h-[100%] bg-white dark:bg-slate-950 transition-colors duration-500`}>
+    <div className={`relative h-[100%]  transition-colors duration-500`}>
 
 
       <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />

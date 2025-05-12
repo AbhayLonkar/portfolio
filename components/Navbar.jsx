@@ -59,7 +59,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             </ul>
         </nav>
 
-        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-white/20 backdrop-blur-2xl dark:border-t-blue-400 md:hidden'}>
+        <nav className={'fixed z-10 bottom-0 right-0 border-t-1 w-full flex items-center h-15 rounded-t-2xl bg-gray-400/30 backdrop-blur-2xl dark:border-t-blue-400 md:hidden'}>
             <ul className={'grid grid-cols-4 w-full'}>
                 {tabs.map((tab, index) => {
                     return (

@@ -45,7 +45,7 @@ const Home = () => {
                             <button
                                 className={'mt-5 h-12 w-37 p-3 font-mono hover:bg-black-400 rounded-full hover:text-white flex items-center justify-evenly gap-1 shadow shadow-black  transition-colors hover:cursor-pointer border border-gray-800 bg-transparent hover:bg-gray-800 text-gray-800 dark:border-gray-800 dark:text-gray-400 dark:hover:bg-gray-400 dark:hover:text-black dark:shadow-gray-400'}
                                 onClick={() => {
-                                    window.open('https://drive.google.com/file/d/1_jTmO6SEJcZ6jK3DWNjThz7jJneplSmt/view?usp=sharing', '_blank')
+                                    window.open('https://drive.google.com/file/d/1CrGydDRNFy94cL1MuXb3N3smTjMfxv6b/view?usp=sharing', '_blank')
                                 }}
                             >
                                 <AiOutlineCloudDownload size={20} /> Download CV

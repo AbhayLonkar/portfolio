@@ -12,8 +12,8 @@ const ProjectItem = ({ image, title, subtitle, live, github, tech }) => {
           <p className='mt-5 mx-2 text-sm md:h-25  overflow-y-auto text-gray-700 dark:text-white'>{subtitle}</p>
           <p className=' mx-2 font-bold text-sm text-gray-700 dark:text-white'>Technologies used: <span>{tech}</span> </p>
           <div className='flex gap-2 '>
-            <a className='transition-colors duration-300 border-black border hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full p-2 w-20 dark:border-white hover:cursor-pointer text-center' href={live} target='_blank' > Live</a>
-            <a className='transition-colors duration-300 border  hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black border-black rounded-full p-2 w-20 dark:border-white hover:cursor-pointer text-center' href={github} target='_blank'>Github</a>
+            <a className='transition-colors duration-300 border-black border hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black rounded-full p-2 w-30 dark:border-white hover:cursor-pointer text-center' href={live} target='_blank' > Live Demo</a>
+            <a className='transition-colors duration-300 border  hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black border-black rounded-full p-2 w-30 dark:border-white hover:cursor-pointer text-center' href={github} target='_blank'>View More</a>
           </div>
         </div>
       </div>

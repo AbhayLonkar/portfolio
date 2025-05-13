@@ -38,7 +38,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         <nav className='flex md:justify-around justify-between p-5 mt-2  h-10 items-center '>
             <h3 className='text-2xl font-bold font-poppins dark:text-white font-mono'>Abhay Lonkar</h3>
             <div className={'flex items-center justify-center gap-4 '}>
-                <AiOutlineGithub size={30} className={'dark:invert'} />
+                <AiOutlineGithub size={30} className={'dark:invert hover:cursor-pointer'} onClick={() => window.open('https://github.com/AbhayLonkar', '_blank')} />
                 {darkMode ? <MdLightMode size={30} className={`cursor-pointer dark:invert`} onClick={toggleDarkMode} /> :
                     <MdDarkMode size={30} className={'cursor-pointer'} onClick={toggleDarkMode} />}
             </div>
